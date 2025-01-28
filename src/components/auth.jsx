@@ -1,7 +1,6 @@
 import { auth, googleAuth } from "../config/firebase-config"
 import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth"
 import { useState } from "react"
-import { async } from "@firebase/util";
 
 export const Auth = () => {
 
@@ -25,7 +24,7 @@ export const Auth = () => {
   }
 
   return (
-  <div>
+  <div className="flex gap-5">
       <button onClick={signinWithGoogle}> Admin sign in </button>
       <button onClick={logout} > Logout </button>
   </div>
